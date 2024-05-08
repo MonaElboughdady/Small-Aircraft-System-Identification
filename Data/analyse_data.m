@@ -7,3 +7,27 @@ opts = delimitedTextImportOptions('VariableNames', varNames,...
                                   'Delimiter', delimiter,...
                                   'DataLines', dataStartLine);
 data = readtable("2024-2-26 12h7m7.csv", opts);
+
+%%
+% p_dot       = body axis roll acc                             | rad/s^2
+% q_bar       = dynamic pressure                               | lbf/ft^2 | 
+% S           = wing reference area                            | ft^2     | Constant
+% b           = wing span                                      | ft^2     | Constant
+% I_x         = moment of insertia                             | slug-ft^2|
+% C_l_o       = nondimensional aerodynamic roll ref value      | 
+% C_l_beta    = nondimensional aerodynamic roll sideslip angle |
+% beta        = sideslip angle                                 | rad      |
+% C_l_p       = nondimensional aerodynamic roll                |
+% p           = body roll rate                                 | rad/s
+% V           = true airspeed                                  | ft/s
+% C_l_r       = nondimensional aerodynamic roll                |
+% r           = body yaw rate                                  | ft/s
+% C_l_delta_a = nondimensional aerodynamic roll                |
+% delta_a     = aileron deflection                             | rad
+% C_l_delta_r = nondimensional aerodynamic roll                |
+% delta_r     = rudder deflection                              | rad
+% c_1         = (I_y - I_z)/I_x                                |
+% q           = body pitch rate                                | rad/s
+% c_2         = I_xz/I_x                                       |
+% r_dot       = body axis yaw acc                              | rad/s^2
+
